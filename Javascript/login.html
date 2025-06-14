@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+h1{
+    align-items: center;
+}
+input{
+    background-color: rgb(165, 255, 243);
+}
+input:hover{
+background-color: rgb(224, 216, 252);
+}
+button{
+    background-color: rgb(252, 110, 110);
+}
+</style>
+<body>
+    <H1><b>Instagram</b></H1>
+    <label for="name">Name:</label>
+    <input type="text" id="name" placeholder="Enter a Name"><br><br>
+    <button onclick="addname()">Add name</button>
+    <ul id="list">
+
+    </ul>
+        <script>
+             function addname(){
+                const name = document.getElementById("name").value;
+                const li = document.createElement("li");
+                li.innerText = name;
+                document.getElementById("list").append(li);
+
+        }
+        </script>
+       
+    
+</body>
+</html>
